@@ -159,6 +159,29 @@ header {
   text-align: center;
 }
 
+.testimonial {
+  background-color: var(--hero-secondary-text);
+  height: 40rem;
+  padding: 10rem 28rem;
+}
+
+.testimonial .quote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--dark-background);
+}
+
+.testimonial .quote-author {
+  font-size: 20px;
+  text-align: right;
+}
+
 footer {
   background-color: var(--dark-background);
+  color: var(--hero-text);
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
