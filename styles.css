@@ -29,6 +29,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   height: 100%;
+  color: var(--hero-text);
 }
 
 img {
@@ -37,10 +38,17 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--hero-text);
 }
 
 ul {
   list-style: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -53,7 +61,6 @@ header {
   display: inline-block;
   padding: 0.7rem 1.4rem;
   background-color: var(--button-cta);
-  color: #fff;
   border-radius: 0.5em;
   width: 14rem;
   text-align: center;
@@ -70,13 +77,9 @@ header {
 .logo {
   font-size: 2.4rem;
   font-weight: bolder;
-  color: var(--hero-text);
 }
 
 .navbar-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
 }
 
@@ -86,9 +89,6 @@ header {
 }
 
 .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10rem 20rem;
   gap: 3rem;
   height: 45rem;
@@ -103,7 +103,6 @@ header {
 
 .left-side h1 {
   font-size: 4.8rem;
-  color: var(--hero-text);
 }
 
 .left-side p,
@@ -123,7 +122,7 @@ header {
 }
 
 .showcase {
-  background-color: #fff;
+  background-color: var(--hero-text);
   height: 45rem;
 }
 
@@ -132,7 +131,7 @@ header {
   font-size: 3.6rem;
   font-weight: bolder;
   text-align: center;
-  margin-top: 4rem;
+  padding-top: 4rem;
 }
 
 .products {
@@ -162,7 +161,19 @@ header {
 .testimonial {
   background-color: var(--hero-secondary-text);
   height: 40rem;
-  padding: 10rem 28rem;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30rem;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 90rem;
+  margin: 0 auto;
 }
 
 .testimonial .quote {
@@ -170,24 +181,22 @@ header {
   font-weight: 300;
   font-style: italic;
   color: var(--dark-background);
+  text-align: left;
 }
 
 .testimonial .quote-author {
   font-size: 20px;
   text-align: right;
+  color: var(--dark-background);
 }
 
 .cta {
   height: 30rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .cta-container {
   height: 13rem;
   background-color: var(--button-cta);
-  color: var(--hero-text);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -209,9 +218,5 @@ header {
 
 footer {
   background-color: var(--dark-background);
-  color: var(--hero-text);
   height: 7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
